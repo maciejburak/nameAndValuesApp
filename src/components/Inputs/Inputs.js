@@ -11,7 +11,7 @@ function Inputs({handleNewUser}) {
     setActivate(activate + 1);
   };
   useEffect(() => {
-    if (activate) {
+    if(activate !== 0){
       nameInput.current.focus();
     }
   }, [activate]);
